@@ -1,0 +1,289 @@
+#container {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 0;
+}
+
+.page-hero.with-shadow {
+    position: relative;
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+}
+
+.page-hero.grey {
+    background: #ebebeb;
+}
+
+.page-hero.with-shadow:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 10px;
+    left: 49.5%;
+    right: 49.5%;
+    z-index: -1;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .4);
+    -moz-box-shadow: 0 0 12px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, .5);
+    -moz-border-radius: 70;
+    -webkit-border-radius: 70;
+    border-radius: 70;
+    -moz-transform: scale3d(30, 1, 1);
+    -ms-transform: scale3d(30, 1, 1);
+    -webkit-transform: scale3d(30, 1, 1);
+    transform: scale3d(30, 1, 1);
+    -ms-transform: scale(30, 1);
+}
+
+.page-hero .default-content {
+    display: inherit;
+    text-align: center;
+    padding: 20px 2em;
+}
+
+.page-hero .default-content {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 1em;
+    display: inherit;
+    text-align: center;
+    padding: 20px 2em;
+}
+
+.page-hero h1 {
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 0;
+    letter-spacing: .5px;
+}
+
+/* 表单部分 */
+
+.page-body.content-body {
+    margin: 50px 0;
+}
+
+.row {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.page-body.content-body .large-6 {
+    width: 50%;
+}
+
+.page-body .grey {
+    background: #f1f1f1;
+}
+
+.page-body h2 {
+    padding-bottom: 4px;
+    /* margin-bottom: 8px; */
+    font-family: proxima nova w01, helvetica neue, helvetica, Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    border-bottom: 1px solid #666;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: .5px;
+}
+
+.formfield {
+    position: relative;
+}
+
+.insert, .cartcaution, .subtotal, input[type=text], input[type=email], input[type=password], select, .value, .shipping-country, .shipping-notes, textarea, .title, .error, .active-result, .tooltip-body, .alert-box, .welcome, .regprice, .eligibleshipping {
+    font-style: normal!important;
+}
+
+.input-flat {
+    position: relative;
+    display: inline-block;
+    margin: 0 0 20px;
+    width: 100%;
+    vertical-align: top;
+}
+
+.input-flat .input-flat-label {
+    margin-bottom: 0;
+}
+
+.input-flat .input-flat-label {
+    position: relative;
+    display: inline-block;
+    color: #666;
+    font-weight: 700;
+    font-size: 12px;
+    /* line-height: 20px; */
+    /* letter-spacing: .3px; */
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-bottom: 0;
+    cursor: text;
+}
+
+.input-flat .input-flat-field:focus+.input-flat-label .input-flat-label-content, .input-flat.input-flat-filled .input-flat-label .input-flat-label-content {
+    color: #232323;
+    font-style: normal;
+}
+
+.input-flat .input-flat-label .input-flat-label-content {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 4px;
+    text-rendering: geometricPrecision;
+    white-space: nowrap;
+}
+
+label .requiredindicator {
+    color: #cf0a2c;
+}
+
+.input-flat .input-flat-field {
+    font-family: Arial, Helvetica, sans-serif!important;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    font-weight: 300;
+    -webkit-appearance: none;
+    z-index: 100;
+    color: #232323;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 6px 15px 8px;
+    font-style: normal;
+    width: 100%;
+    height: 35px;
+}
+
+.input-flat .error small.error, .input-flat span.error, .input-flat small.error {
+    margin-bottom: 0;
+}
+
+.input-flat .error small.error, .input-flat span.error, .input-flat small.error {
+    margin: 0;
+    padding: 10px;
+}
+
+.error .input-flat .input-flat-field {
+    border: 2px solid #e31837;
+}
+
+span.error, small.error {
+    display: block;
+}
+
+span.error:after, small.error:after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 100%;
+    top: 35px;
+    left: 20px;
+    margin-left: -10px;
+    border: solid transparent;
+    border-bottom-color: #fee834;
+    border-width: 10px;
+}
+
+.row .row:after {
+    clear: both;
+}
+
+.row .row:before, .row .row:after {
+    content: " ";
+    display: table;
+}
+
+.page-body a {
+    font-size: 13px;
+    line-height: 16px;
+    color: #e21836;
+}
+
+.chkshowpassword, .rememberpassword {
+    position: absolute;
+    left: 0;
+    width: 16px;
+    height: 16px;
+}
+
+.button.primary {
+    color: #fff;
+    background-color: #cf0a2c;
+}
+
+.button.compact {
+    width: auto;
+}
+
+.button {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    font-family: proxima nova w01, helvetica neue, helvetica, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .05em;
+    margin: 0;
+    overflow: hidden;
+    padding: 8px 20px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase!important;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.page-body h3 {
+    margin-bottom: 13px;
+    font-family: proxima nova w01, helvetica neue, helvetica, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.page-body .account-why-sign-up ul {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 1.25em;
+    list-style-position: outside;
+    font-family: inherit;
+}
+
+.page-body ul li {
+    font-size: 13px;
+    color: #666;
+}
+
+.page-body p.field-hint, .page-body div.field-hint {
+    margin-top: 5px;
+    color: #666;
+    font-size: 11px;
+}
+
+.redText{
+    color: #cf0a2c;
+}

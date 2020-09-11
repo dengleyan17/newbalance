@@ -1,0 +1,523 @@
+/* 第一图 */
+
+#cdev-hp-banner-beta-descriptor-grey-banner21 .cdev-hp-banner-beta-img-col {
+    background-color: #eee;
+    background-image: url('https://www.newbalance.com.cn/on/demandware.static/-/Sites-newbalance_cn-Library/zh/dw5505e276/hubs/2020/9yue/snowpeakzs/720-420.jpg');
+}
+
+@media (max-width: 767px) {
+    #homepage-content .cdev-slider-flag {
+        display: block;
+    }
+}
+
+@media (min-width: 467px) {
+    .cdev-hp-banner-beta-wrapper {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .cdev-hp-banner-beta-wrapper {
+        margin-top: 40px;
+    }
+    #cdev-hp-banner-beta-descriptor-grey-banner21 {
+        background-color: #eee;
+        background-image: url('https://www.newbalance.com.cn/on/demandware.static/-/Sites-newbalance_cn-Library/zh/dw55ce2847/hubs/2020/9yue/snowpeakzs/1540-950.jpg');
+    }
+    #cdev-hp-banner-beta-descriptor-grey-banner21 .cdev-hp-banner-beta-copy {
+        max-width: 740px;
+        padding-left: 0;
+        text-align: left;
+    }
+    #cdev-hp-banner-beta-descriptor-grey-banner21.cdev-hp-banner-beta-copy .cdev-new-tag-right {
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .cdev-hp-banner-beta-wrapper {
+        margin-top: 0px;
+    }
+    #cdev-hp-banner-beta-descriptor-grey-banner21 {
+        background-image: url('https://www.newbalance.com.cn/on/demandware.static/-/Sites-newbalance_cn-Library/zh/dwb5ee8882/hubs/2020/9yue/snowpeakzs/3840-950.jpg');
+    }
+}
+
+.cdev-hp-banner-beta-wrapper.cdev-hp-banner-main {
+    height: 475px;
+    background: #fff no-repeat center;
+    background-size: auto 100%;
+}
+
+/* 内容中部导航栏 */
+
+.cdev-hidden-content-nav {
+    background-color: #fff;
+    margin: 10px 0;
+}
+
+.cdev-hidden-content-nav ul {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 0;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.cdev-hidden-content-nav li {
+    background-color: #efefef;
+    width: 50%;
+    display: block;
+    text-align: center;
+    float: left;
+    padding: 5.5px 0;
+    border: solid 5px #fff;
+}
+
+.cdev-hidden-content-nav li a {
+    position: relative;
+    width: auto;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+}
+
+.cdev-hidden-content-nav h3 {
+    display: inline-block;
+    color: #000;
+    font-size: 19px;
+    line-height: .8em;
+    font-weight: 200;
+    font-weight: 200;
+    margin: 0px 5px 14px 0;
+    text-transform: uppercase;
+}
+
+.cdev-hidden-content-nav h3 span {
+    display: inline-block;
+    color: #000;
+    font-size: 24px;
+    line-height: .8em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.cdev-shopnow-lf {
+    width: 72px;
+}
+
+.cdev-shopnow-rg {
+    width: 72px;
+}
+
+@media only screen and (min-width: 768px) {
+    .cdev-hidden-content-nav ul {
+        /*width: 1200px;*/
+        height: 120px;
+        /*padding:0 155px;*/
+    }
+    .cdev-hidden-content-nav {
+        height: 120px;
+        padding: 15px 0;
+        background-color: #efefef;
+        margin: 10px 0;
+    }
+    .cdev-hidden-content-nav ul {
+        /*width: 780px;*/
+        height: 120px;
+    }
+    .cdev-hidden-content-nav li, .cdev-hidden-content-nav .cdev-middle {
+        width: 25%;
+        display: inline-block;
+        border: none;
+        padding: 10px 0;
+        margin: 0;
+    }
+    .cdev-hidden-content-nav li a {
+        background-color: transparent;
+        text-align: center;
+    }
+    .cdev-hidden-content-nav h3 {
+        display: block;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: .9em;
+        margin: 5px 0 8px 0;
+    }
+    .cdev-hidden-content-nav h3 span {
+        display: block;
+        font-size: 24px;
+        margin-top: -6px;
+        padding-bottom: 10px;
+    }
+}
+
+.cdev-hidden-content-nav h3 span:after {
+    top: -6px;
+}
+
+.cdev-shopnow-lf {
+    font-size: 14px;
+    color: #585858;
+    text-align: center;
+    display: block;
+    line-height: 36px;
+}
+
+.cdev-shopnow-rg {
+    background: #000;
+    width: 96px;
+    height: 36px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    display: block;
+    line-height: 36px;
+}
+
+@media only screen and (min-width: 1025px) {
+    .cdev-hidden-content-nav {
+        height: 120px;
+        padding: 15px 0;
+        background-color: #efefef;
+        margin: 10px 0;
+    }
+    .cdev-hidden-content-nav ul {
+        width: 1200px;
+        height: 120px;
+        padding: 0 155px;
+    }
+    .cdev-hidden-content-nav li, .cdev-hidden-content-nav .cdev-middle {
+        width: 25%;
+        display: inline-block;
+        border: none;
+        padding: 10px 0;
+        margin: 0;
+    }
+    .cdev-hidden-content-nav li a {
+        background-color: transparent;
+        text-align: center;
+    }
+    .cdev-hidden-content-nav h3 {
+        display: block;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: .9em;
+        margin: 5px 0 8px 0;
+    }
+    .cdev-hidden-content-nav h3 span {
+        display: block;
+        font-size: 24px;
+        margin-top: -6px;
+        padding-bottom: 10px;
+    }
+}
+
+.cdev-hidden-content-nav h3 span:after {
+    top: -6px;
+}
+
+.cdev-shopnow-lf {
+    font-size: 14px;
+    color: #585858;
+    text-align: center;
+    display: block;
+    line-height: 36px;
+}
+
+.cdev-shopnow-rg {
+    background: #000;
+    width: 96px;
+    height: 36px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    display: block;
+    line-height: 36px;
+}
+
+/* 第二图 */
+
+#cdev-hp-banner-beta-beauty-and-the-beast-kids-0904 .cdev-hp-banner-beta-img-col {
+    background-color: #fff;
+    background-image: url('https://www.newbalance.com.cn/on/demandware.static/-/Sites-newbalance_cn-Library/zh/dw830a829f/hubs/2020/9yue/m920/1536-878.jpg');
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    #cdev-hp-banner-beta-beauty-and-the-beast-kids-0904 {
+        background-color: #fff;
+        background-image: url('https://www.newbalance.com.cn/on/demandware.static/-/Sites-newbalance_cn-Library/zh/dw830a829f/hubs/2020/9yue/m920/1536-878.jpg');
+        height: 446px;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    #cdev-hp-banner-beta-beauty-and-the-beast-kids-0904 {
+        background-image: url('https://www.newbalance.com.cn/on/demandware.static/-/Sites-newbalance_cn-Library/zh/dwdeed4065/hubs/2020/9yue/m920/3840-700.jpg');
+        height: 350px;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
+
+/* 第三图 */
+
+#cdev-hp-banner-beta-beauty-and-the-beast-kids-0875 .cdev-hp-banner-beta-img-col {
+    background-color: #fff;
+    background-image: url('https://www.newbalance.com.cn/on/demandware.static/-/Sites-newbalance_cn-Library/zh/dw834fd619/hubs/2020/7yue/kawhi/1536-878.jpg');
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    #cdev-hp-banner-beta-beauty-and-the-beast-kids-0875 {
+        background-color: #fff;
+        background-image: url('https://www.newbalance.com.cn/on/demandware.static/-/Sites-newbalance_cn-Library/zh/dw834fd619/hubs/2020/7yue/kawhi/1536-878.jpg');
+        height: 446px;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    #cdev-hp-banner-beta-beauty-and-the-beast-kids-0875 {
+        background-image: url('https://www.newbalance.com.cn/on/demandware.static/-/Sites-newbalance_cn-Library/zh/dw4508a06e/hubs/2020/7yue/kawhi/3840-700.jpg');
+        height: 350px;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
+
+/* 第四图 */
+
+#cdev-hp-banner-beta-beauty-and-the-beast-kids-0807 .cdev-hp-banner-beta-img-col {
+    background-color: #fff;
+    background-image: url('https://www.newbalance.com.cn/on/demandware.static/-/Sites-newbalance_cn-Library/zh/dwd3db228f/hubs/2020/8yue/1100/1536-878.png');
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    #cdev-hp-banner-beta-beauty-and-the-beast-kids-0807 {
+        background-color: #fff;
+        background-image: url('https://www.newbalance.com.cn/on/demandware.static/-/Sites-newbalance_cn-Library/zh/dwd3db228f/hubs/2020/8yue/1100/1536-878.png');
+        height: 446px;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    #cdev-hp-banner-beta-beauty-and-the-beast-kids-0807 {
+        background-image: url('https://www.newbalance.com.cn/on/demandware.static/-/Sites-newbalance_cn-Library/zh/dwf6d53289/hubs/2020/8yue/1100/3840-700.png');
+        height: 350px;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
+
+/* 首页列表框 */
+
+/* 第一部分 */
+
+#cdev-hp-banner-beta-descriptor-sub-mmdd-3493 .cdev-hp-banner-beta-img-col {
+    background-color: #eee;
+    background-image: url('https://www.newbalance.com.cn/on/demandware.static/-/Sites-newbalance_cn-Library/zh/dw96d479c3/hubs/2020/5yue/827/1172-670.jpg');
+}
+
+#cdev-hp-banner-beta-descriptor-sub-mmdd-3290 .cdev-hp-banner-beta-img-col {
+    background-color: #eee;
+    background-image: url('https://www.newbalance.com.cn/on/demandware.static/-/Sites-newbalance_cn-Library/zh/dwc8335fea/hubs/2020/7yue/703/1172-670.jpg');
+}
+
+/* 第二部分 */
+
+#cdev-hp-banner-beta-descriptor-sub-mmdd-0813 .cdev-hp-banner-beta-img-col {
+    background-color: #eee;
+    background-image: url('https://www.newbalance.com.cn/on/demandware.static/-/Sites-newbalance_cn-Library/zh/dw5d9fef7d/hubs/2020/8yue/480/1172-670s.jpg');
+}
+
+#cdev-hp-banner-beta-descriptor-sub-mmdd-0814 .cdev-hp-banner-beta-img-col {
+    background-color: #eee;
+    background-image: url('https://www.newbalance.com.cn/on/demandware.static/-/Sites-newbalance_cn-Library/zh/dwfe844c47/hubs/2020/5yue/452/1172-670kq.jpg');
+}
+
+#homepage-content .row.collapse.full-width .columns:nth-of-type(1) {
+    padding-right: .4em;
+    width: 50%;
+}
+
+.cdev-hp-banner-beta-img-col {
+    background-size: cover;
+    height: 0;
+    padding-top: 57%;
+    position: relative;
+}
+
+.cdev-hp-banner-beta-copy-wrapper {
+    height: 170px;
+    padding: 30px 0 0 0;
+}
+
+.cdev-hp-banner-beta-copy {
+    text-align: center;
+}
+
+.cdev-hp-banner-beta-wrapper .cdev-new-tag-right {
+    position: absolute;
+    top: 0;
+    left: 6px;
+    margin-top: 6%;
+}
+
+.cdev-new-tag-right, .cdev-new-tag-left, .cdev-new-tag-center {
+    position: relative;
+    display: inline-block;
+    background-color: #fff;
+    width: auto;
+    color: #000;
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 700;
+    letter-spacing: .3em;
+    vertical-align: middle;
+    text-transform: uppercase;
+    text-indent: 5px;
+    height: 15px;
+    margin: 0 8px 10px 0;
+}
+
+.cdev-tag-black {
+    background-color: #000;
+    color: #fff;
+}
+
+.cdev-new-tag-right.cdev-tag-black:after, .cdev-new-tag-left.cdev-tag-black:before {
+    border-top: 15px solid #000;
+}
+
+.cdev-new-tag-right:after, .cdev-new-tag-left:before, .cdev-new-tag-center:after {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    right: -6px;
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    border-left: 0 solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 15px solid #fff;
+    vertical-align: middle;
+    content: '';
+}
+
+.cdev-hp-banner-beta-copy h4 {
+    display: block;
+    font-family: 'ITC Avant Garde Gothic W04', Arial, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13px;
+    height: 1em;
+    outline: none !important;
+}
+
+.cdev-hp-banner-beta-copy-wrapper .cdev-cta-wrapper {
+    text-align: center;
+    color: #e21836;
+    outline: none !important;
+}
+
+.cdev-hp-banner-beta-copy-wrapper .cdev-shop-mw-link {
+    color: #e21836;
+    font-size: 15px!important;
+    font-weight: 500!important;
+    font-family: "ITC Avant Garde Gothic W01", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif!important;
+    margin: 0 8px;
+    display: inline-block;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.cdev-shop-mw-link, .cdev-shop-mw-link:hover {
+    display: block;
+    font: 400 13px/20px 'ITC Avant Garde Gothic W04', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.cdev-hp-banner-beta-copy-wrapper .cdev-shop-mw-link:after {
+    content: ""!important;
+    display: inline-block!important;
+    width: 8px!important;
+    height: 8px!important;
+    border-right: 2px solid #e21836!important;
+    border-bottom: 2px solid #e21836!important;
+    -webkit-transform: rotate(-45deg)!important;
+    -moz-transform: rotate(-45deg)!important;
+    -ms-transform: rotate(-45deg)!important;
+    -o-transform: rotate(-45deg)!important;
+    transform: rotate(-45deg)!important;
+    top: -1.5px;
+    left: 5px;
+}
+
+.cdev-shop-mw-link:after {
+    content: "\e611";
+    font-family: 'nbicon';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    left: 8px;
+    line-height: 1;
+    position: relative;
+    /* speak: none; */
+    top: 1px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#homepage-content .row.collapse.full-width .columns:nth-of-type(2) {
+    padding-left: .4em;
+    width: 50%;
+}
+
+.medium-6 {
+    width: 50%;
+}
+
+/* 轮播图 */
+
+.cedv-swiper-img04 {
+    background: url('https://www.newbalance.com.cn/on/demandware.static/-/Sites-newbalance_cn-Library/zh/dw128ca896/hubs/2020/5yue/xcx/3840-950.jpg') no-repeat center;
+    height: 475px;
+    background-size: auto 100%;
+}
+
+.cedv-swiper-img01 {
+    background: url('https://www.newbalance.com.cn/on/demandware.static/-/Sites-newbalance_cn-Library/zh/dw088b2bfb/hubs/2020/2yue/nb1992/3840-950zt2.jpg') no-repeat center;
+    background-size: auto 100%;
+    height: 475px;
+}
+
+.swiper-container .hide {
+    opacity: 1;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    transition: opacity 0.5s;
+    width: 20px;
+    height: 60px;
+}
+
+.swiper-button-next, .swiper-button-prev::after{
+    color: #e21836;
+}
