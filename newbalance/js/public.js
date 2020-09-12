@@ -6,13 +6,4 @@ $(() => {
     // 禁止选中网页文字
     document.onselectstart = function () { return false };
 
-    
-   
-
-
-
-
-
-
-
 });

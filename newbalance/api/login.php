@@ -1,7 +1,7 @@
 <?php
 $db = mysqli_connect("gz2005.io","root","123456","newbalance");
 
-$username = $_REQUEST["username"];
+$email = $_REQUEST["email"];
 $password = $_REQUEST["password"];
 // $checkOut = $_REQUEST["checkOut"];
 
@@ -12,7 +12,7 @@ $password = $_REQUEST["password"];
 #        [1] 如果密码不正确，那么就返回错误的提示信息(对不起，您的密码不正确！)
 #        [2] 如果密码正确，那么就返回登录成功。
 
-$sql =  "SELECT * FROM `user` WHERE `username`='$username'";
+$sql =  "SELECT * FROM `user` WHERE `email`='$email'";
 $result = mysqli_query($db,$sql);
 
 $data = array("status"=>"","data"=>array("msg"=>""));
@@ -22,7 +22,7 @@ if(mysqli_num_rows($result) === 0){
     $data["data"]["msg"] = "登录失败，用户名不存在";
 }else{
     //如果存在，进行下一步验证
-    $sql2 =  "SELECT * FROM `user` WHERE `username`='$username'";
+    $sql2 =  "SELECT * FROM `user` WHERE `password`='$password'";
     $result = mysqli_query($db,$sql2);
     $res = mysqli_fetch_all($result, MYSQLI_ASSOC);
     $res = $res[0];
@@ -36,6 +36,7 @@ if(mysqli_num_rows($result) === 0){
     }else{
     # (2-2-2) 密码正确，那么就返回数据(登录成功)
     $userId = $res["id"];
+    $username = $res["username"];
     $data["status"] = "success";
     $data["data"]["msg"] = "恭喜你，登录成功";
     $data["data"]["userId"] = $userId;

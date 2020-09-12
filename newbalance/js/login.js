@@ -49,12 +49,12 @@ $(() => {
         event.preventDefault();
 
         $('.formfield input').trigger('blur');
-        if($('.errorTotal').length !== 0){
+        if ($('.errorTotal').length !== 0) {
             return
-        }else if(!$('#reg-check').prop('checked')){
+        } else if (!$('#reg-check').prop('checked')) {
             return
         }
-        
+
         let data = {
             username: $('#registerName').val(),
             password: $('#registerPassword').val(),
@@ -66,13 +66,13 @@ $(() => {
             type: 'get',
             data,
             dataType: 'json',
-            success(res){
+            success(res) {
                 console.log(res);
 
-                if(res.status === 'success'){
+                if (res.status === 'success') {
                     alert(`${res.msg}`);
                     window.location.href = './login&reg.html';
-                }else{
+                } else {
                     alert(`${res.msg}`);
                 }
             }
@@ -85,14 +85,14 @@ $(() => {
         loginUsername: '$("#loginUsername").val().length === 0',
         loginPassword: '$("#loginPassword").val().length === 0'
     }
-    $('.loginForm input').blur(function(){
+    $('.loginForm input').blur(function () {
         let logIdx = this.id;
 
-        if(eval(loginOpiton[logIdx])){
+        if (eval(loginOpiton[logIdx])) {
             $(this).parent().parent().addClass('error');
             $(this).parent().parent().addClass('loginerrorTotal');
             $(this).next().css('display', 'block');
-        }else{
+        } else {
             $(this).parent().parent().removeClass('error');
             $(this).parent().parent().removeClass('loginerrorTotal');
             $(this).next().css('display', 'none');
@@ -101,18 +101,41 @@ $(() => {
 
 
     // 登录按钮点击
-    $('#loginBtn').click(function(e){
+    $('#loginBtn').click(function (e) {
         let event = e || window.event;
         event.preventDefault();
 
         $('.loginForm input').trigger('blur');
-        if($('loginerrorTotal').length !== 0){
+        if ($('loginerrorTotal').length !== 0) {
             return
         }
 
-        
+        let data = {
+            email: $.trim($('#loginUsername').val()),
+            password: $.trim($('#loginPassword').val())
+        }
 
-        
+        $.ajax({
+            url: '../api/login.php',
+            type: 'post',
+            dataType: 'json',
+            data,
+            success(res) {
+                if (res.status === 'success') {
+                    alert(`${res.data.msg}`);
+                    window.location.href = './index.html';
+                    if ($('#login-rememberme').prop('checked')) {
+                        addCookie('username', `${res.data.username}`, 176);
+                    } else {
+                        addCookie('username', `${res.data.username}`);
+                    }
+                } else {
+                    alert(`${res.data.msg}`);
+                }
+            }
+        })
+
+
     })
 
 
@@ -134,7 +157,12 @@ $(() => {
 
 
 
+    function addCookie(name, value, expireHours) {
+        var exdate = new Date();
+        exdate.setTime(exdate.getTime() + expireHours * 60 * 60 * 1000);
+        document.cookie = `${name}=${escape(value)};expires=${exdate.toUTCString()};path=/`;
 
+    }
 
 
 

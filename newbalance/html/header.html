@@ -795,7 +795,7 @@
 
                 <!-- 登录/注册/购物车按钮 -->
                 <div class="customer-info">
-                    <div class="account-menu navblock" >
+                    <div class="account-menu navblock unlogined" >
                         <a href="./login&amp;reg.html" title="登录">
                             <span class="header-icon icon-myaccount"></span>
                             <span class="header-icon-text hide-for-medium">登录</span>
@@ -808,7 +808,7 @@
                     </div>
 
                     <!-- 登录后（我的账户） -->
-                    <div class="account-menu navblock" style="display: none;">
+                    <div class="account-menu navblock logined" style="display: none;">
                         <a href="" class="action triangle">
                             <span class="header-icon icon-myaccount accountMenuShow">
                                 我的账户
@@ -843,12 +843,22 @@
 </button>
 
 
-
-
-
 <script>
-
 $(() => {
+    console.log(getCookie('username'));
+
+    // 查看登录状态
+    if(getCookie('username')){
+        console.log(getCookie('username'));
+        $('.logined').css('display','inline-block');
+        $('.unlogined').css('display','none');
+    }else{
+        console.log(getCookie('username'));
+        $('.logined').css('display','none');
+        $('.unlogined').css('display','inline-block');
+    }
+
+
     // 二级导航鼠标进入显示
     $(".category-nav").hover(function () {
         let idx = $(this).index();
@@ -875,20 +885,22 @@ $(() => {
     $('.back-to-top').click(function(){
         window.scrollTo({top:0,behavior: "smooth"});
     });
-    
+
 });
 
-$('#top-nav-search').focusin(function(){
-    $.ajax({
-        url: 'https://www.newbalance.com.cn/on/demandware.store/Sites-newbalance_cn-Site/zh/EnhancedSearch-Suggestions',
-        type: 'get',
-        dataType: 'jsonp',
-        data:{q:999},
-        success(res){
-            console.log(res);
-        }
-    });
-})
+
+
+// $('#top-nav-search').focusin(function(){
+//     $.ajax({
+//         url: 'https://www.newbalance.com.cn/on/demandware.store/Sites-newbalance_cn-Site/zh/EnhancedSearch-Suggestions',
+//         type: 'get',
+//         dataType: 'jsonp',
+//         data:{callback(res)},
+//         success(res){
+//             console.log(res);
+//         }
+//     });
+// })
 
 
 </script>
