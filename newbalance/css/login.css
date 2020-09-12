@@ -221,7 +221,7 @@ span.error:after, small.error:after {
 
 .chkshowpassword, .rememberpassword {
     position: absolute;
-    left: 0;
+    left: 20px;
     width: 16px;
     height: 16px;
 }

@@ -1,7 +1,7 @@
 <?php
 # 001-先连接数据库
 # window系统默认的用户名是"root" 默认密码为""
-$db = mysqli_connect("gz2005.io", "root", "123456", "project");
+$db = mysqli_connect("gz2005.io", "root", "123456", "newbalance");
 
 # 002-获取客户端提交的参数
 $username = $_REQUEST["username"];

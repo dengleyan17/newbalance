@@ -42,7 +42,7 @@
                                         <div class="row">
                                             <div class="small-12 columns">
                                                 <!-- 验证错误添加error属性 -->
-                                                <div class="formfield username">
+                                                <div class="loginForm username">
                                                     <div class="input-flat input input-flat-filled">
                                                         <label for="login-username" class="input-flat-label ">
                                                             <span class="input-flat-label-content label.username">
@@ -53,7 +53,7 @@
 
                                                         <input type="email"
                                                             class="input-flat-field fix-full-width loginusername required"
-                                                            id="login-username" name="login-username">
+                                                            id="loginUsername" name="login-username">
                                                         <!-- 验证错误显示block -->
                                                         <small class="error"
                                                             id="dwfrm_login_username_error" style="display: none;">请输入一个有效的电子邮箱地址</small>
@@ -66,7 +66,7 @@
                                         <div class="row">
                                             <div class="small-12 columns">
                                                 <!-- 验证错误添加error属性 -->
-                                                <div class="formfield password">
+                                                <div class="loginForm password">
                                                     <div class="input-flat password input-flat-filled">
                                                         <label for="login-password" class="input-flat-label">
                                                             <span class="input-flat-label-content label.password">
@@ -76,10 +76,9 @@
                                                         </label>
                                                         <input type="password"
                                                             class="input-flat-field  fix-full-width required"
-                                                            id="login-password" name="login-password">
+                                                            id="loginPassword" name="login-password">
                                                         <!-- 验证错误显示block -->
-                                                        <small id="dwfrm_login_password_error" class="error" style="display:none">请至少输入 8
-                                                            个字符密码</small>
+                                                        <small id="dwfrm_login_password_error" class="error" style="display:none">登录密码不能为空</small>
                                                     </div>
                                                 </div>
                                             </div>
@@ -91,14 +90,14 @@
                                                 <div class="forgotpassword">
                                                     <a href="###" id="PasswordReset" title="重新设置您的密码">重新设置您的密码</a>
                                                 </div>
-                                                <div class="formfield showpassword">
+                                                <div class="showpassword">
                                                     <input type="checkbox" id="chk-show-password" name="chkshowpassword"
                                                         class="chkshowpassword">
                                                     <label for="chk-show-password" class="checkbox-left">
                                                         <span class="custom text" style="margin-left: 25px">显示密码</span>
                                                     </label>
                                                 </div>
-                                                <div class="formfield rememberme">
+                                                <div class="rememberme">
                                                     <input type="checkbox" name="login-rememberme" id="login-rememberme"
                                                         class="rememberpassword">
                                                     <label for="login-rememberme" class="checkbox-left">
@@ -143,14 +142,14 @@
                         <form class="custom" id="RegistrationForm" novalidate="novalidate">
                             <fieldset style="padding-top: 8px;">
                                 <!-- 验证错误添加error属性 -->
-                                <div class="formfield ">
+                                <div class="formfield regusername">
                                     <div class="input-flat input">
                                         <label for="register-name" class="input-flat-label ">
                                             <span class="input-flat-label-content profile.lastname">
                                                 姓名
                                             </span>
                                         </label>
-                                        <input type="text" class="input-flat-field" id="register-name"
+                                        <input type="text" class="input-flat-field" id="registerName"
                                             name="register-name">
                                         <!-- 验证错误显示block -->
                                         <small id="dwfrm_profile_customer_lastname_error"
@@ -161,7 +160,7 @@
 
                             <fieldset>
                                 <!-- 验证错误添加error属性 -->
-                                <div class="formfield">
+                                <div class="formfield regemail">
                                     <div class="input-flat input">
                                         <label for="register-email" class="input-flat-label ">
                                             <span class="input-flat-label-content profile.lastname">
@@ -169,7 +168,7 @@
                                                 电子邮箱
                                             </span>
                                         </label>
-                                        <input type="text" class="input-flat-field" id="register-email"
+                                        <input type="text" class="input-flat-field" id="registerEmail"
                                             name="register-email">
                                         <!-- 验证错误显示block -->
                                         <small id="dwfrm_profile_customer_lastname_error"
@@ -180,7 +179,7 @@
 
                             <fieldset>
                                 <!-- 验证错误添加error属性 -->
-                                <div class="formfield">
+                                <div class="formfield regtesteamil">
                                     <div class="input-flat input">
                                         <label for="register-testemail" class="input-flat-label ">
                                             <span class="input-flat-label-content profile.lastname">
@@ -188,18 +187,18 @@
                                                 验证邮箱
                                             </span>
                                         </label>
-                                        <input type="text" class="input-flat-field" id="register-testemail"
+                                        <input type="text" class="input-flat-field" id="registerTestemail"
                                             name="register-testemail">
                                         <!-- 验证错误显示block -->
                                         <small id="dwfrm_profile_customer_lastname_error"
-                                            class="error" style="display: none;">请输入一个有效的电子邮箱地址</small>
+                                            class="error" style="display: none;">两次输入电子邮箱不一致</small>
                                     </div>
                                 </div>
                             </fieldset>
 
                             <fieldset style="margin-bottom: 23px;">
                                 <!-- 验证错误添加error属性 -->
-                                <div class="formfield">
+                                <div class="formfield regpassword">
                                     <div class="input-flat input">
                                         <label for="register-password" class="input-flat-label ">
                                             <span class="input-flat-label-content profile.lastname">
@@ -207,7 +206,7 @@
                                                 密码
                                             </span>
                                         </label>
-                                        <input type="password" class="input-flat-field" id="register-password"
+                                        <input type="password" class="input-flat-field" id="registerPassword"
                                             name="register-password">
                                         <!-- 验证错误显示block -->
                                         <small id="dwfrm_profile_customer_lastname_error" class="error" style="display: none;">请至少输入 8
@@ -223,7 +222,7 @@
 
                             <fieldset>
                                 <!-- 验证错误添加error属性 -->
-                                <div class="formfield">
+                                <div class="formfield regtestpassword">
                                     <div class="input-flat input">
                                         <label for="register-testpassword" class="input-flat-label ">
                                             <span class="input-flat-label-content profile.lastname">
@@ -231,11 +230,10 @@
                                                 验证密码
                                             </span>
                                         </label>
-                                        <input type="password" class="input-flat-field" id="register-testpassword"
+                                        <input type="password" class="input-flat-field" id="registerTestpassword"
                                             name="register-testpassword">
                                         <!-- 验证错误显示block -->
-                                        <small id="dwfrm_profile_customer_lastname_error" class="error" style="display: none;">请至少输入 8
-                                            个字符密码</small>
+                                        <small id="dwfrm_profile_customer_lastname_error" class="error" style="display: none;">两次输入密码不一致</small>
                                     </div>
                                 </div>
                             </fieldset>
@@ -243,14 +241,14 @@
                             <fieldset>
                                 <div class="row login-tools">
                                     <div class="small-12 columns">
-                                        <div class="formfield showpassword">
+                                        <div class="showpassword">
                                             <input type="checkbox" id="reg-show-password" name="regshowpassword"
                                                 class="chkshowpassword">
                                             <label for="reg-show-password" class="checkbox-left">
                                                 <span class="custom text" style="margin-left: 25px">显示密码</span>
                                             </label>
                                         </div>
-                                        <div class="formfield rememberme" style="width: 100%;">
+                                        <div class="rememberme" style="width: 100%;">
                                             <input type="checkbox" name="reg-check" id="reg-check"
                                                 class="rememberpassword">
                                             <label for="reg-check" class="checkbox-left">
