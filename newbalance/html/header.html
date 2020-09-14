@@ -112,12 +112,12 @@
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="" class="subCat">
+                                                        <a href="./list.html" class="subCat">
                                                             <h5 class="no-h-style">休闲</h5>
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="" class="subCat">
+                                                        <a href="./list.html" class="subCat">
                                                             <h5 class="no-h-style">英美产系列</h5>
                                                         </a>
                                                     </li>
@@ -169,12 +169,12 @@
                                             <div class="list-choose subcategory" style="left: 0%; top: 0px;">
                                                 <ul>
                                                     <li>
-                                                        <a href="" class="subCat">
+                                                        <a href="./list.html" class="subCat">
                                                             <h5 class="no-h-style">T恤/背心</h5>
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="" class="subCat">
+                                                        <a href="./list.html" class="subCat">
                                                             <h5 class="no-h-style">短裤</h5>
                                                         </a>
                                                     </li>
@@ -845,12 +845,13 @@
 
 <script>
 $(() => {
-    console.log(getCookie('username'));
+    // console.log(getCookie('username'));
 
     // 查看登录状态
     if(getCookie('username')){
-        console.log(getCookie('username'));
+        let cookieName = getCookie('username');
         $('.logined').css('display','inline-block');
+        $('.logined').text(`${cookieName}的账户`);
         $('.unlogined').css('display','none');
     }else{
         console.log(getCookie('username'));

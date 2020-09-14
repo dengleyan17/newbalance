@@ -1,0 +1,241 @@
+/* 头顶的导航栏 */
+
+#container {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 0;
+}
+
+.breadcrumb-container {
+    margin: 28px auto;
+    max-width: 1200px;
+}
+
+.fullBreadcrumbs {
+    position: relative;
+    width: 100%;
+    z-index: 9990;
+}
+
+.fullBreadcrumbs .product-categories {
+    display: block;
+    margin-bottom: 0;
+    font-size: 13px;
+}
+
+.fullBreadcrumbs .product-categories li {
+    display: inline-block;
+}
+
+.fullBreadcrumbs .product-categories .c-path {
+    color: #232323;
+}
+
+.fullBreadcrumbs .product-categories .c-path-last {
+    color: #999;
+}
+
+.fullBreadcrumbs .product-categories .c-slash {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* banner图模块 */
+
+#cdev-hp-banner-beta-beauty-and-the-beast-kids-0015 .cdev-hp-banner-beta-img-col {
+    background-color: #fff;
+    background-image: url('https://www.newbalance.com.cn/on/demandware.static/-/Sites-newbalance_cn-Library/zh/dwc6e0b992/hubs/2020/5yue/990v2/1536-878s.jpg');
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    #cdev-hp-banner-beta-beauty-and-the-beast-kids-0015 {
+        background-color: #fff;
+        background-image: url('https://www.newbalance.com.cn/on/demandware.static/-/Sites-newbalance_cn-Library/zh/dwc6e0b992/hubs/2020/5yue/990v2/1536-878s.jpg');
+        height: 446px;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    #cdev-hp-banner-beta-beauty-and-the-beast-kids-0015 {
+        background-image: url('https://www.newbalance.com.cn/on/demandware.static/-/Sites-newbalance_cn-Library/zh/dwffe49d00/hubs/2020/5yue/990v2/3840-950s.jpg');
+        height: 350px;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
+
+.grid-hero {
+    display: block;
+    margin-bottom: 40px;
+    position: relative;
+    background: #ebebeb;
+    z-index: 200;
+}
+
+.cdev-hp-banner-beta-wrapper.cdev-hp-banner-main {
+    background: #fff no-repeat center;
+    background-size: auto 100%;
+}
+
+.cdev-hp-banner-beta-wrapper {
+    position: relative;
+}
+
+/* 内容列表区 */
+
+.refineable-wrapper {
+    position: relative;
+}
+
+/* 左侧list栏 */
+
+.left-product-refine .refinements-bar {
+    margin-bottom: 0;
+    padding-bottom: 30px;
+    text-align: left;
+    border-bottom: 0;
+}
+
+.left-product-refine .refinements-bar {
+    background: none;
+    display: block;
+    top: 0;
+    z-index: 1201;
+}
+
+.medium-3 {
+    width: 25%;
+}
+
+.left-product-refine .refinements-bar .selector {
+    left: 0;
+    position: relative;
+    min-height: 0;
+    width: auto;
+    background-color: transparent;
+    z-index: auto;
+    display: inline-block;
+}
+
+.left-product-refine .refinements-bar .selector .refinements-list {
+    padding: 0;
+}
+
+.left-product-refine .refinements-bar .selector .refinements-list .refinement-selector {
+    border-bottom: solid #ccc 1px;
+    margin: 0 0 1em 0;
+    padding: 0 0 0 1em;
+}
+
+.left-product-refine .refinements-bar button.filter-select {
+    color: #000;
+}
+
+.left-product-refine .refinements-bar button.filter-select {
+    color: #666;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.left-product-refine .refinements-bar .filter-select {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+    outline: none;
+    position: relative;
+    text-align: left;
+    text-transform: uppercase;
+    width: 100%;
+    -webkit-appearance: none;
+}
+
+.left-product-refine .refinements-bar .filter-select {
+    background: #fff;
+    color: #666;
+    border: none;
+    box-shadow: none !important;
+    display: block;
+    font-family: "Proxima Nova W01", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: .4px;
+    line-height: 100%;
+    margin-bottom: 10px;
+    padding: 10px 10px 10px 0;
+    text-align: left;
+}
+
+.left-product-refine .refinements-bar .selector .refinements-list .refinement-selector .refinement {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.left-product-refine .refinements-bar .selector .refinements-list .refinement-selector .refinement {
+    display: inline-block;
+    list-style: none;
+    margin-bottom: 0px;
+    padding: 0;
+    width: 100%;
+}
+
+.left-product-refine .refinements-bar .selector .refinements-list .refinement-selector .refinement li.checkbox {
+    border: none;
+    box-sizing: content-box;
+    display: inline-block;
+    font-size: 10px;
+    font-weight: normal;
+    min-height: auto;
+    height: 1.5em;
+    margin: 0 0 1.5em 0;
+    padding: 0;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    z-index: 1;
+}
+
+.left-product-refine .refinements-bar .selector .refinements-list .refinement-selector .refinement li.checkbox .refine-link {
+    text-align: left;
+    padding: 0;
+    border: none;
+}
+
+.left-product-refine .refinements-bar .selector .refinements-list .refinement-selector .refinement .refine-link {
+    content: "";
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.left-product-refine .refinements-bar .selector .refinements-list .refinement-selector .refinement .refine-link {
+    background: #fff;
+    border: none;
+    color: #000;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    height: 100%;
+    letter-spacing: .4px;
+    line-height: 1;
+    padding: 0;
+    width: 25%;
+}
+
+.left-product-refine .refinements-bar .selector .refinements-list .refinement-selector .refinement .refine-link .genderRanking{
+    margin-bottom: 0;
+}

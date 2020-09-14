@@ -144,19 +144,6 @@ $(() => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     function addCookie(name, value, expireHours) {
         var exdate = new Date();
         exdate.setTime(exdate.getTime() + expireHours * 60 * 60 * 1000);
