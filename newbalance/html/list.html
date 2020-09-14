@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Balance中国官方商城</title>
+    <link rel="stylesheet" href="../Linearicons-Free-v1.0.0/Web Font/style.css">
     <link rel="stylesheet"
         href="https://www.newbalance.com.cn/on/demandware.static/Sites-newbalance_cn-Site/-/zh/v1599063000706/build/css/framework.css">
     <link rel="stylesheet"
@@ -150,19 +151,19 @@
                                                 <li class="checkbox  half">
                                                     <button class="refine-link" title="男子" data-value="男子">
                                                         <input type="checkbox" class="genderRanking" id="man">
-                                                        <span class="refine-value">男子</span>
+                                                        <span class="refine-value">man</span>
                                                     </button>
                                                 </li>
                                                 <li class="checkbox  half">
                                                     <button class="refine-link" title="女子" data-value="女子">
                                                         <input type="checkbox" class="genderRanking" id="female">
-                                                        <span class="refine-value">女子</span>
+                                                        <span class="refine-value">female</span>
                                                     </button>
                                                 </li>
                                                 <li class="checkbox  half">
                                                     <button class="refine-link" title="中性款" data-value="中性款">
                                                         <input type="checkbox" class="genderRanking" id="neutral">
-                                                        <span class="refine-value">中性款</span>
+                                                        <span class="refine-value">neutral</span>
                                                     </button>
                                                 </li>
                                             </ul>
@@ -174,8 +175,96 @@
                     </div>
                 </div>
                 <!-- 右边半区 -->
-                <div class="small-12 medium-9 columns" id="product-lists">
+                <div class="small-12 medium-9 columns" id="product-lists" style="width: 75%;">
+                    <!-- 头部 -->
+                    <div class="category-grid-header">
+                        <h1>
+                            英美产系列
+                        </h1>
+                        <span class="filter-selectnumber-title">
+                            (34)
+                        </span>
+                        <!-- 排位筛选 -->
+                        <div class="sort-selector">
+                            <form class="custom">
+                                <div class="sortby">
+                                    <select data-placeholder="种类" class="sort-select" aria-label="种类">
+                                        <option value disabled selected hidden>种类</option>
+                                        <option class="result-selected" data-type="hot-sale" value="hot-sale">店铺热销
+                                        </option>
+                                        <option value="priceLowToHeight">价格（从低到高）</option>
+                                        <option value="priceHeightToLow">价格（从高到低）</option>
+                                        <option value="newArrival">新品上市</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
 
+                    <!-- 左侧筛选框对应的条件 -->
+                    <div class="refinement-breadcrumbs">
+                        <div class="refbreads">
+                            <div class="refinement other man" style="display: none;">
+                                <span class="value">
+                                    <span class="refine-value">man</span>
+                                </span>
+                                <span class="lnr lnr-cross"></span>
+                            </div>
+                            <div class="refinement other female" style="display: none;">
+                                <span class="value">
+                                    <span class="refine-value">female</span>
+                                </span>
+                                <span class="lnr lnr-cross"></span>
+                            </div>
+                            <div class="refinement other neutral" style="display: none;">
+                                <span class="value">
+                                    <span class="refine-value">neutral</span>
+                                </span>
+                                <span class="lnr lnr-cross"></span>
+                            </div>
+                        </div>
+                        <!-- ALL CLEAN-->
+                        <!-- <div class="refbread-actions" style="display: inline-block;">
+                            <a class="refbread-actions-clear" href="./list.html" style="display: inline;">Clear All</a>
+                        </div> -->
+                    </div>
+
+                    <!-- 商品列表区域 -->
+                    <ul id="product-list-main" class="product-list refineable" style="opacity: 1;">
+                        <!-- <li class="tile initSwatch">
+                            <div class="product product-tile">
+                                <a href="./goods.html?id=" class="product-image">
+                                    <img src="https://nb.scene7.com/is/image/NB/m990n2_nb_02_i?$pdpflexf2$&wid=220&hei=220&qlt=85&resMode=bisharp"
+                                        class="shot lazy exp-90-loaded"
+                                        alt="New Balance 990V2美国原产男女同款复古休闲鞋, M990N2" title="M990N2">
+                                </a>
+                                <div class="product-top-spacer">
+                                    <p class="product-name">
+                                        <a href="./goods.html?id=" title="990V2美国原产男女同款复古休闲鞋">
+                                            990V2美国原产男女同款复古休闲鞋
+                                        </a>
+                                    </p>
+                                    <p class="exp-90-product-gendercat">
+                                        Unisex 中性款
+                                    </p>
+                                    <div class="product-pricing">￥1,999.00</div>
+                                </div>
+                            </div>
+                        </li> -->
+                    </ul>
+
+                    
+
+                </div>
+            </div>
+            <!-- 底部返回首页 -->
+            <div class="content-container" data-content="seo">
+                <div class="row collapse">
+                    <div class="small-12 columns" style="width: 100%;">
+                        <div class="content">
+                            <a href="./index.html">返回首页</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
