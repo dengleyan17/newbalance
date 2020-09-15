@@ -6,17 +6,20 @@ include_once "./connetDB.php";
 mysqli_query($db,'SET NAMES utf8');
 mysqli_set_charset($db,'utf8');
 
+$size = $_REQUEST["size"];
 $page = $_REQUEST["page"];
 $sort = $_REQUEST["sort"];
 
-$limit = $page * 20;
+$limit = $page * $size;
 
 if($sort == "default"){
-    $sql = "SELECT * FROM goods Order BY goodsid LIMIT $limit,20";
-  }elseif($sort == "price_asc"){
-    $sql = "SELECT * FROM goods Order BY goodsid ASC LIMIT $limit ,20";
+    $sql = "SELECT * FROM goods Order BY goodsid LIMIT $limit,$size";
+  } elseif ($sort == "price_asc") {
+    $sql = "SELECT * FROM goods Order BY price ASC LIMIT $limit ,$size";
   } elseif ($sort == "price_desc") {
-    $sql = "SELECT * FROM goods Order BY goodsid DESC LIMIT $limit,20";
+    $sql = "SELECT * FROM goods Order BY price DESC LIMIT $limit,$size";
+  } elseif ($sort == "hot_sale") {
+    $sql = "SELECT * FROM goods Order BY sale DESC LIMIT $limit,$size";
   }
 
   $result = mysqli_query($db,$sql);

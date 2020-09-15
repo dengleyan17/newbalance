@@ -332,8 +332,8 @@
     display: inline-block;
     font-weight: bold;
     line-height: 18px;
-    margin: 10px 5px 0 0;
-    padding: 2px 6px;
+    margin-right: 5px;
+    padding: 0 6px;
 }
 
 .refinement-breadcrumbs .refbread-actions .refbread-actions-clear {
@@ -371,6 +371,7 @@
     border: 0;
     padding: 0 0 10px;
     text-align: left;
+    position: relative;
 }
 
 #container .product-tile:hover, #addToBagModal .product-tile:hover {
@@ -449,16 +450,13 @@
     font-weight: 700;
 }
 
-
-
-
 /* 底部返回首页 */
+
 .content-container {
     width: 100%;
     height: auto;
     padding: 100px 0px;
 }
-
 
 .content-container .content {
     width: 70%;
@@ -466,4 +464,96 @@
     padding: 0px;
     margin: 0 auto;
     text-align: center;
+}
+
+/* New标签 */
+
+#container .product-tile .new-colors-banner.exp-90-only-new, #addToBagModal .product-tile .new-colors-banner.exp-90-only-new {
+    left: 0;
+}
+
+#container .product-tile .new-colors-banner, #addToBagModal .product-tile .new-colors-banner {
+    top: 12px;
+}
+
+.product-tile .new-colors-banner {
+    position: absolute;
+    z-index: 1;
+    font-size: 9px;
+    text-transform: uppercase;
+    line-height: 1;
+    cursor: pointer;
+    letter-spacing: .12em;
+    font-family: proxima nova w01, helvetica neue, helvetica, Helvetica, Arial, sans-serif;
+    /* top: 15px;
+    left: 15px; */
+}
+
+.product-tile .new-colors-banner .new {
+    display: inline-block;
+    position: relative;
+    font-weight: 500;
+    background-color: #000;
+    color: #fff;
+    padding: 3px 2px 0 4px;
+    height: 13px;
+}
+
+.product-tile .new-colors-banner .new:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 13px 6px 0 0;
+    border-color: #000 transparent transparent transparent;
+}
+
+
+/* 颜色供应标签 */
+#container .product-tile .swatches, #addToBagModal .product-tile .swatches {
+    left: 0;
+    margin-top: 100%;
+    position: absolute;
+    top: 10px;
+    width: 100%;
+}
+
+.product-tile .swatches {
+    display: block;
+    margin-top: 7px;
+    text-align: center;
+    line-height: 1;
+}
+
+.product-tile .swatches .colorcount {
+    padding: 0 0 0 9px;
+}
+
+.product-tile .swatches .colorcount {
+    /* display: none; */
+    font-size: 12px;
+    color: #434343;
+    text-align: left;
+    /* padding: 0 0 0 2px; */
+}
+
+/* 加载全部按钮 */
+/* .product-paging-no-scroll{
+    
+} */
+.product-paging-no-scroll .morePro{
+    position: relative;
+    min-height: 50px;
+}
+.product-paging-no-scroll .morePro .loadingMore{
+    position: absolute;
+    top: 0;left: 0;
+    bottom: 0;right: 0;
+    margin: auto;
+
+    width: 200px;
 }

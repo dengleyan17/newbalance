@@ -189,12 +189,12 @@
                             <form class="custom">
                                 <div class="sortby">
                                     <select data-placeholder="种类" class="sort-select" aria-label="种类">
-                                        <option value disabled selected hidden>种类</option>
-                                        <option class="result-selected" data-type="hot-sale" value="hot-sale">店铺热销
+                                        <option value="default" disabled selected hidden>种类</option>
+                                        <option class="result-selected" data-type="hot-sale" value="hot_sale">店铺热销
                                         </option>
-                                        <option value="priceLowToHeight">价格（从低到高）</option>
-                                        <option value="priceHeightToLow">价格（从高到低）</option>
-                                        <option value="newArrival">新品上市</option>
+                                        <option value="price_asc">价格（从低到高）</option>
+                                        <option value="price_desc">价格（从高到低）</option>
+                                        <option value="default">新品上市</option>
                                     </select>
                                 </div>
                             </form>
@@ -202,7 +202,7 @@
                     </div>
 
                     <!-- 左侧筛选框对应的条件 -->
-                    <div class="refinement-breadcrumbs">
+                    <div class="refinement-breadcrumbs" style="min-height: 26px; padding-left: 5px;">
                         <div class="refbreads">
                             <div class="refinement other man" style="display: none;">
                                 <span class="value">
@@ -230,31 +230,19 @@
                     </div>
 
                     <!-- 商品列表区域 -->
-                    <ul id="product-list-main" class="product-list refineable" style="opacity: 1;">
-                        <!-- <li class="tile initSwatch">
-                            <div class="product product-tile">
-                                <a href="./goods.html?id=" class="product-image">
-                                    <img src="https://nb.scene7.com/is/image/NB/m990n2_nb_02_i?$pdpflexf2$&wid=220&hei=220&qlt=85&resMode=bisharp"
-                                        class="shot lazy exp-90-loaded"
-                                        alt="New Balance 990V2美国原产男女同款复古休闲鞋, M990N2" title="M990N2">
-                                </a>
-                                <div class="product-top-spacer">
-                                    <p class="product-name">
-                                        <a href="./goods.html?id=" title="990V2美国原产男女同款复古休闲鞋">
-                                            990V2美国原产男女同款复古休闲鞋
-                                        </a>
-                                    </p>
-                                    <p class="exp-90-product-gendercat">
-                                        Unisex 中性款
-                                    </p>
-                                    <div class="product-pricing">￥1,999.00</div>
-                                </div>
-                            </div>
-                        </li> -->
-                    </ul>
+                    <ul id="product-list-main" class="product-list refineable" style="opacity: 1;"></ul>
 
-                    
-
+                    <!-- 加载全部的按钮 -->
+                    <div class="product-paging-no-scroll">
+                        <section class="exp-104-rm morePro">
+                            <a href="###" class="button cancel compact view-more page-show-all show loadingMore">
+                                <span class="seemore-load">
+                                    更多款式
+                                    <span class="count">(34)</span>
+                                </span>
+                            </a>
+                        </section>
+                    </div>
                 </div>
             </div>
             <!-- 底部返回首页 -->
