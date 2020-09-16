@@ -1,8 +1,8 @@
 <?php
-    $username = $_GET['username'];
+    $username = $_REQUEST['username'];
 
     #链接数据库
-    $con = mysqli_connect('gz2005.io','root','123456','project');
+    $con = mysqli_connect('gz2005.io','root','123456','newbalance');
 
     # 设置SQL语句
     $sql = "SELECT * FROM `car` WHERE `username`='$username'";
@@ -22,8 +22,8 @@
     $dataArr = array();
     foreach($arr as $key => $value){
         // print_r($value);
-        $id = $value['goods_id'];
-        $sql2 = "SELECT * FROM `goods` WHERE `goods_id` = '$id'";
+        $id = $value['goodsid'];
+        $sql2 = "SELECT * FROM `goods` WHERE `goodsid` = '$id'";
         $res2 = mysqli_query($con,$sql2);
         $row2 = mysqli_fetch_assoc($res2);
         # 把购物车中商品数量的值 添加给商品中的cart_number
