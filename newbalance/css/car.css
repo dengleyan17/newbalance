@@ -1,0 +1,48 @@
+#container {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 0;
+}
+
+.page-hero.with-shadow {
+    position: relative;
+    -moz-box-shadow: 0 1px 1px rgba(0,0,0,.2);
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.2);
+    box-shadow: 0 1px 1px rgba(0,0,0,.2);
+}
+
+.page-hero.grey {
+    background: #ebebeb;
+}
+
+.page-hero .default-content {
+    display: inherit;
+    text-align: center;
+    padding: 20px 2em;
+}
+
+.page-hero .default-content {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* padding: 15px 1em; */
+    text-align: left;
+}
+
+
+.pt_cart .cart-title .title-left {
+    padding-right: 15px;
+    text-align: right;
+}
+
+.pt_cart .cart-title .icon {
+    position: relative;
+    display: inline-block;
+    width: 39px;
+    height: 39px;
+    top: -8px;
+    vertical-align: middle;
+}
+
+
+

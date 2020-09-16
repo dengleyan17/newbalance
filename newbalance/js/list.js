@@ -23,14 +23,14 @@ $(() => {
                 <span class="new-colors-banner exp-90-only-new" ${item.new === '0' ? 'style="display:none;"' : 'style="display:block;"'}>
                     <div class="new">New</div>
                 </span>
-                <a href="./goods.html?id=${item.model}" class="product-image">
+                <a href="./goods.html?id=${item.goodsid}" class="product-image">
                     <img src="${item.src}"
                         class="shot lazy exp-90-loaded"
                         alt="${item.tit}, ${item.model}" title="${item.model}">
                 </a>
                 <div class="product-top-spacer">
                     <p class="product-name">
-                        <a href="./goods.html?id=${item.model}" title="${item.tit}">
+                        <a href="./goods.html?id=${item.goodsid}" title="${item.tit}">
                             ${item.tit}
                         </a>
                     </p>

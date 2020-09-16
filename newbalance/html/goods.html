@@ -10,6 +10,8 @@
         href="https://www.newbalance.com.cn/on/demandware.static/Sites-newbalance_cn-Site/-/zh/v1599063000706/build/css/framework.css">
     <link rel="stylesheet"
         href="https://www.newbalance.com.cn/on/demandware.static/Sites-newbalance_cn-Site/-/zh/v1598976587923/build/css/secondary.css">
+    <link rel="stylesheet"
+        href="https://www.newbalance.com.cn/on/demandware.static/Sites-newbalance_cn-Site/-/zh/v1600186190697/build/css/main-cn.css">
     <link rel="stylesheet" href="../swiper-6.1.2/swiper-6.1.2/package/swiper-bundle.min.css">
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/reset.css">
@@ -17,13 +19,12 @@
 </head>
 
 <body>
-    <!-- 引入头部 -->
     <div id="headerBox"></div>
 
     <!-- 内容区 -->
     <div id="container" class="pt_storefront pt_pdp product-detail pdid1 pgal_2 product-loaded">
         <!-- 右侧浏览伸缩栏 -->
-        <div class="sticky-atb-outer-wrapper selectors-closed quickToBuy" style="z-index: 10;">
+        <!-- <div class="sticky-atb-outer-wrapper selectors-closed quickToBuy" style="z-index: 200;">
             <div class="stick-atb-product-info">
                 <div class="sticky-atb-wrapper">
                     <div class="image">
@@ -33,18 +34,18 @@
                         <span class="price">￥1,999.00</span>
                     </div>
                     <div class="button-container">
-                        <button class="add-to-cart disabled" type="button" style="background-color: #B7171A;">
+                        <button class="add-to-cart disabled" type="button">
                             <span>
                                 <span class="addto-content">
                                     <span class="longlabel">添加</span>
-                                    <span class="lnr lnr-store"></span>
+                                    <span class="lnr lnr-cart"></span>
                                 </span>
                             </span>
                         </button>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- 详情页的内容区 -->
         <section class="product-info selectors-exploded-wrapper">
@@ -54,27 +55,27 @@
                     <div class="product-gallery">
                         <div class="product-left">
                             <ul class="product-left-box">
-                                <li class="product-left-item active">
+                                <li class="product-left-item" idx="1">
                                     <picture class="normal">
-                                        <img src="https://nb.scene7.com/is/image/NB/m990n2_nb_02_i?$pdpflexf2XS2x$"
+                                        <img src="https://nb.scene7.com/is/image/NB/m990n2_nb_02_i?$pdpflexf2$"
                                             alt="">
                                     </picture>
                                 </li>
-                                <li class="product-left-item">
-                                    <picture class="normal">
-                                        <img src="https://nb.scene7.com/is/image/NB/m990n2_nb_02_i?$pdpflexf2XS2x$"
+                                <li class="product-left-item" idx="2">
+                                    <picture class="normal" >
+                                        <img src="https://nb.scene7.com/is/image/NB/m990n2_nb_04_i?$pdpflexf2$"
                                             alt="">
                                     </picture>
                                 </li>
-                                <li class="product-left-item">
+                                <li class="product-left-item" idx="3">
                                     <picture class="normal">
-                                        <img src="https://nb.scene7.com/is/image/NB/m990n2_nb_02_i?$pdpflexf2XS2x$"
+                                        <img src="https://nb.scene7.com/is/image/NB/m990n2_nb_03_i?$pdpflexf2$"
                                             alt="">
                                     </picture>
                                 </li>
-                                <li class="product-left-item">
+                                <li class="product-left-item" idx="4">
                                     <picture class="normal">
-                                        <img src="https://nb.scene7.com/is/image/NB/m990n2_nb_02_i?$pdpflexf2XS2x$"
+                                        <img src="https://nb.scene7.com/is/image/NB/m990n2_nb_06_i?$pdpflexf2$"
                                             alt="">
                                     </picture>
                                 </li>
@@ -82,7 +83,7 @@
                         </div>
                         <div class="product-right">
                             <div class="product-right-normalPic">
-                                <picture class="normalPic clearfix">
+                                <picture class="normalPic clearfix" style="float: right;">
                                     <img src="https://nb.scene7.com/is/image/NB/m990n2_nb_02_i?$pdpflexf2$" alt="">
                                 </picture>
                             </div>
@@ -137,7 +138,7 @@
                                                 <div class="title">尺码</div>
                                             </div>
                                             <ul class="variant-select size" data-attr="size">
-                                                <li role="button" tabindex="0" class="select-item 37" data-value="37"
+                                                <li role="button" tabindex="0" class="select-item 37 " data-value="37"
                                                     data-display-value="37">
                                                     <span class="line">37</span>
                                                 </li>
@@ -188,20 +189,123 @@
                             </div>
                         </div>
                     </div>
-
-
+                    <div class="row checkout-row small-collapse medium-collapse large-collapse qty-and-add-to-bag"
+                        style="display: flex;flex-wrap: wrap;margin-top: 10px;">
+                        <div class="add-to-cart-wrap" style="flex-grow: 2;">
+                            <!-- 加入购物车按钮 -->
+                            <div class="button-container prevent-wrap">
+                                <div class="hide-oos">
+                                    <button class="add-to-cart disabled" type="button" alt="Add to Bag">
+                                        <div class="product-pricing hide-for-mobile">
+                                            <span class="price">￥1,999.00</span>
+                                        </div>
+                                        <span>
+                                            <span class="addto-content">
+                                                <span class="longlabel">加入购物车</span>
+                                                <span class="lnr lnr-cart"></span>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- 马上去结算按钮 -->
+                            <div class="button-container express-add-to-cart-container">
+                                <button class="express-add-to-cart disabled" style="margin-top: 14px;">
+                                    <span class="longlabel">结账</span>
+                                    <span class="lnr lnr-chevron-right"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 分割线 -->
+                    <hr class="border-ruler">
+                    <div class="shortDesc">
+                        <div class="row">
+                            <div class="small-12 columns">
+                                <div>经典复古，潮流百搭</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 产品详情 -->
+                    <div class="product-details">
+                        <hr class="border-ruler">
+                        <div class="row section-title">
+                            <div class="small-12 columns">
+                                <h5 class="title turnonDetails">产品详情</h5>
+                                <span class="section-toggle expand lnr-chevron-down lnr"
+                                    style="display: inline-block;"></span>
+                                <span class="section-toggle collapse lnr-chevron-up lnr" style="display: none;"></span>
+                            </div>
+                        </div>
+                        <!-- 详情缩放 -->
+                        <div class="row section-content" style="display: none;">
+                            <div class="small-12 columns">
+                                <section class="details">
+                                    <div class="row">
+                                        <div class="small-12 medium-12 columns">
+                                            <div class="row">
+                                                <div class="small-12 columns">
+                                                    <div class="longdescription">
+                                                        这款990V2鞋面采用猪皮革与网面相结合，彰显质感，舒适透气；元祖灰配色，经典复古，潮流百搭；搭载ABZORB避震中底，提升缓震性能。
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="small-12 medium-12 columns end features">
+                                                    <div class="features-bucket">
+                                                        <ul>
+                                                            <li>货号：M990N2</li>
+                                                            <li>上市时间：2019年秋季</li>
+                                                            <li>产地：美国</li>
+                                                            <li>帮面材质：猪皮革+织物</li>
+                                                            <li>品名：男/女鞋</li>
+                                                            <li>规格：22cm~30cm</li>
+                                                            <li>等级：合格品</li>
+                                                            <li>ABZORB中底</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <hr class="border-ruler">
+                    </div>
                 </div>
             </div>
         </section>
 
-
-
-
-
-
+        <!-- 猜你喜欢 -->
+        <!-- <section class="product-content guessYourLike" style="margin:25px 0;">
+            <div class="content-bucket">
+                <div class="content-dev mamer-lf-guanlian">
+                    <div class="guanlian-wrap">
+                        <h2>猜你可能喜欢：</h2>
+                        <ul class="guanlian-lists">
+                            <li>
+                                <div class="prod">
+                                    <a href="./goods.html?id=" target="_blank">
+                                        <img src="https://www.newbalance.com.cn/on/demandware.static/-/Sites-newbalance_cn-Library/zh/dw7bdfbded/hubs/2020/5yue/guanlian/m990.jpg" alt="">
+                                    </a>
+                                </div>
+                                <p>
+                                    <span class="classification">男款</span>
+                                    <span class="explaination">美国原产990V5运动鞋</span>
+                                </p>
+                                <p class="price">￥1,999.00</p>
+                                <a class="cdev-shop-mw-link" href="./goods.html?id=">
+                                    点击购买
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+        </section> -->
     </div>
-
-    <!-- 引入脚部 -->
+    
     <div id="footerBox"></div>
 
     <script src="../js/jquery-3.4.1.js"></script>
@@ -209,6 +313,7 @@
     <script src="../swiper-6.1.2/swiper-6.1.2/package/swiper-bundle.min.js"></script>
     <script src="../js/cookie.js"></script>
     <script src="../js/public.js"></script>
+    <script src="../js/ajax.js"></script>
     <script src="../js/goods.js"></script>
 </body>
 

@@ -1,10 +1,10 @@
 <?php
     # 用户名 商品id
-    $username = $_GET['username'];
-    $goods_id = $_GET['goods_id'];
+    $username = $_REQUEST['username'];
+    $goods_id = $_REQUEST['goods_id'];
     // $username = '婧婧';
     // $goods_id = '8';
-    $con = mysqli_connect('gz2005.io','root','123456','project');
+    $con = mysqli_connect('gz2005.io','root','123456','newbalance');
 
 
     $sql = "SELECT * FROM `car` WHERE `username`='$username' AND `goods_id`='$goods_id'";

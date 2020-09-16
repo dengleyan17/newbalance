@@ -95,7 +95,7 @@
 
 .row.small-collapse .medium-7 {
     width: 58.33333333%;
-    min-height: 2248px;
+    /* min-height: 2248px; */
 }
 
 /* .pt_pdp .product-info .sticky {
@@ -111,7 +111,7 @@
 
 .product-gallery {
     position: relative;
-    height: 2248px
+    /* height: 2248px */
 }
 
 .product-gallery .product-left {
@@ -138,7 +138,7 @@
 .product-gallery .product-right {
     float: right;
     width: 80%;
-    max-height: 2248px;
+    /* max-height: 2248px; */
 }
 
 .product-gallery .product-right .normalPic {
@@ -434,6 +434,11 @@ button.nostyle {
     line-height: 46px;
 }
 
+.selector-container .selectors.exploded ul.variant-select li.clickActive {
+    background: black;
+    color: snow;
+}
+
 /* -------------------------------------------宽度 */
 
 .selector-container .selectors.exploded .variant-select-wrap {
@@ -491,4 +496,371 @@ button.nostyle {
 
 .selector-container .selectors.exploded ul.variant-select:after {
     clear: both;
+}
+
+/* -------------------------加入购物车按钮-------------------------- */
+
+.pt_pdp .product-info .variant-selector-container-exp93 .checkout-row .button-container {
+    display: block;
+}
+
+.button-container {
+    position: relative;
+    /* display: inline-block; */
+    vertical-align: top;
+}
+
+.pt_pdp .product-info .variant-selector-container-exp93 .add-to-cart-wrap .add-to-cart {
+    height: 56px;
+}
+
+.product-info .checkout-row .button-container .add-to-cart, .product-detail .product-info .checkout-row .button-container .express-add-to-cart {
+    display: block;
+    height: 46px;
+    width: 100%;
+}
+
+button.add-to-cart.disabled, button.add-to-cart[disabled], button.express-add-to-cart.disabled, button.express-add-to-cart[disabled], button.checkout-btn.disabled, button.checkout-btn[disabled] {
+    opacity: 1;
+}
+
+button.add-to-cart, button.express-add-to-cart, button.checkout-btn {
+    margin-bottom: 0;
+    height: 56px;
+    border: 2px solid #cf0a2c;
+    box-shadow: none;
+    padding: 8px 20px;
+    overflow: hidden;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    background-color: #cf0a2c;
+    z-index: 100;
+    cursor: pointer;
+    -moz-transition: background-color .3s ease-in-out;
+    -o-transition: background-color .3s ease-in-out;
+    -webkit-transition: background-color .3s ease-in-out;
+    transition: background-color .3s ease-in-out;
+    -moz-transition: border-color .1s ease-in-out;
+    -o-transition: border-color .1s ease-in-out;
+    -webkit-transition: border-color .1s ease-in-out;
+    transition: border-color .1s ease-in-out;
+}
+
+.pt_pdp .product-info .variant-selector-container-exp93 .add-to-cart-wrap .product-pricing {
+    float: left;
+    line-height: 2.8;
+    padding: 0;
+}
+
+.product-detail .product-info .product-pricing.hide-for-mobile {
+    display: inline-block;
+}
+
+.product-detail .product-info .product-pricing {
+    text-align: left;
+}
+
+.product-pricing {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 800;
+    color: #000;
+    line-height: 1.5;
+    padding-bottom: 16px;
+    letter-spacing: .05em;
+}
+
+.pt_pdp .product-info .variant-selector-container-exp93 .add-to-cart-wrap .product-pricing .price {
+    font-size: 14px;
+    color: #fff;
+}
+
+.pt_pdp .product-info .variant-selector-container-exp93 .add-to-cart-wrap .addto-content {
+    line-height: 2.8;
+    float: right;
+}
+
+.product-detail .product-info .checkout-row .button-container .add-to-cart .longlabel, .product-detail .product-info .checkout-row .button-container .express-add-to-cart .longlabel {
+    display: inline;
+}
+
+button.add-to-cart .longlabel, button.add-to-cart .shortlabel, button.add-to-cart .icon-cart, button.add-to-cart .icon-express_checkout, button.express-add-to-cart .longlabel, button.express-add-to-cart .shortlabel, button.express-add-to-cart .icon-cart, button.express-add-to-cart .icon-express_checkout, button.checkout-btn .longlabel, button.checkout-btn .shortlabel, button.checkout-btn .icon-cart, button.checkout-btn .icon-express_checkout {
+    position: relative;
+    left: 0;
+    z-index: 10;
+    -moz-transition: left .3s ease-in-out;
+    -o-transition: left .3s ease-in-out;
+    -webkit-transition: left .3s ease-in-out;
+    transition: left .3s ease-in-out;
+}
+
+/* --------------------------结算按钮----------------------------- */
+
+.pt_pdp .product-info .variant-selector-container-exp93 .checkout-row .button-container {
+    display: block;
+}
+
+/* .pt_pdp .product-info .variant-selector-container-exp93 .checkout-row .button-container .express-add-to-cart {
+    margin-top: 14px;
+} */
+
+.product-detail .product-info .checkout-row .button-container .add-to-cart, .product-detail .product-info .checkout-row .button-container .express-add-to-cart {
+    display: block;
+    height: 56px;
+    width: 100%;
+}
+
+button.express-add-to-cart {
+    color: #cf0a2c;
+    background-color: #fff;
+}
+
+/* 分割线 */
+
+hr.border-ruler {
+    border: solid #ddd;
+    border-width: 1px 0 0;
+    clear: both;
+    margin: 1.25em 0 1.1875em;
+    height: 0;
+}
+
+/* ------------------------经典复古，潮流百搭----------------------------- */
+
+.pt_pdp .product-info .variant-selector-container-exp93 .shortDesc {
+    color: #000;
+}
+
+/* ------------------------------产品详情---------------------------------- */
+
+.turnoff {
+    display: none;
+}
+
+.pt_pdp .product-info .variant-selector-container-exp93 .product-details {
+    border: 0;
+    padding-top: 0;
+}
+
+.pt_pdp .product-info .variant-selector-container-exp93 .product-details .section-title {
+    margin: 0;
+}
+
+.pt_pdp .product-info .variant-selector-container-exp93 .product-details .section-title .columns {
+    padding: 0;
+}
+
+.pt_pdp .product-info .variant-selector-container-exp93 .product-details .section-title .title {
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+.product-detail .section-title .title {
+    margin: 0;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    color: #666;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.pt_pdp .product-info .variant-selector-container-exp93 .product-details .lnr-chevron-down, .pt_pdp .product-info .variant-selector-container-exp93 .product-details .lnr-chevron-up {
+    padding-right: 15px;
+}
+
+.pt_pdp .product-info .variant-selector-container-exp93 .product-details .lnr-chevron-down, .pt_pdp .product-info .variant-selector-container-exp93 .product-details .lnr-chevron-up {
+    color: #cf0a2c;
+    font-size: 15px;
+    top: 7px;
+    padding-right: 0;
+    font-weight: 700;
+    display: block;
+}
+
+.product-detail .section-title .section-toggle {
+    font-size: 30px;
+    color: #e5e5e5;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    text-align: right;
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+.pt_pdp .product-info .variant-selector-container-exp93 .product-details .section-content {
+    margin: 25px 10px 0;
+    display: none;
+}
+
+.product-detail section.product-details, .product-detail section.details {
+    background: 0 0;
+    letter-spacing: .4px;
+}
+
+.pt_pdp .product-info .variant-selector-container-exp93 .product-details .details .row {
+    margin-right: -.9375em;
+}
+
+.pt_pdp .product-info .variant-selector-container-exp93 .product-details .details .row {
+    margin-bottom: 5px;
+    /* margin-right: -.2375em; */
+}
+
+.pt_pdp .product-info .variant-selector-container-exp93 .product-details .section-content .columns.medium-12 {
+    padding: 0 .9375em;
+}
+
+.pt_pdp .product-info .variant-selector-container-exp93 .product-details .details .longdescription {
+    margin: 0 0 20px;
+    color: #000;
+}
+
+.product-detail .product-details .longdescription, .product-detail .product-details .shortdescription {
+    font-size: 12px;
+    color: #666;
+    margin: 20px 0;
+    line-height: 1.2;
+    text-align: justify;
+}
+
+.pt_pdp .product-info .variant-selector-container-exp93 .product-details .details .features {
+    margin: 0;
+}
+
+.pt_pdp .product-info .variant-selector-container-exp93 .product-details .details .features ul {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.pt_pdp .product-info .variant-selector-container-exp93 .product-details .details .features ul li {
+    margin-left: 17px;
+}
+
+.pt_pdp .product-info .variant-selector-container-exp93 .product-details .details .features ul li {
+    color: #000;
+    /* margin-left: 20px; */
+}
+
+.product-detail .product-details .features li {
+    list-style-type: disc;
+    font-weight: 400;
+    font-size: 13px;
+    /* color: #666;
+    margin-left: 20px; */
+    margin-bottom: 7px;
+    line-height: 1.2;
+}
+
+/* ----------------------------------------------------------猜你喜欢------------------------------------------------------------------ */
+
+.recs-complete-set-v1-wrapper+section.product-content {
+    margin-top: 5em;
+}
+
+section.product-content {
+    margin-top: 5em;
+}
+
+.product-detail section {
+    background-color: #fff;
+    padding-bottom: 1px;
+}
+
+.guanlian-wrap {
+    font-size: 25px;
+    width: 1180px;
+    margin: auto;
+}
+
+.guanlian-wrap h2 {
+    margin-bottom: 60px;
+    margin-left: 8px;
+}
+
+.guanlian-wrap h2 {
+    font-weight: 400;
+    font-size: .9em;
+    margin-left: 2.4%;
+    margin-bottom: 6%;
+    color: #666;
+}
+
+.guanlian-lists {
+    width: 1024px;
+}
+
+.guanlian-lists {
+    /* width: 768px; */
+    margin: auto;
+}
+
+.guanlian-lists {
+    text-align: center;
+    overflow: hidden;
+}
+
+.guanlian-lists li {
+    width: 25%;
+    margin-bottom: 0%;
+    padding: 0%;
+}
+
+.guanlian-lists li {
+    float: left;
+    /* width: 50%; */
+    margin-bottom: 6%;
+    box-sizing: border-box;
+    padding: 1%;
+}
+
+.guanlian-lists .prod {
+    margin-bottom: 8%;
+}
+
+.guanlian-lists .prod>a {
+    color: #e21836;
+}
+
+.guanlian-lists p {
+    font-size: .6em;
+    padding: 0;
+    margin: 0;
+}
+
+.guanlian-lists a.cdev-shop-mw-link {
+    color: rgb(0, 0, 0);
+    margin-top: 0px;
+    font-size: 0.6em;
+    font-family: 微软雅黑;
+    text-decoration: none;
+}
+
+.cdev-shop-mw-link, .cdev-shop-mw-link:hover {
+    display: block;
+    font: 400 13px/20px 'ITC Avant Garde Gothic W04', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.cdev-shop-mw-link:after {
+    content: "\e611";
+    font-family: 'nbicon';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    left: 8px;
+    line-height: 1;
+    position: relative;
+    /* speak: none; */
+    top: 1px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
