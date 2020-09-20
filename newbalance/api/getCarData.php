@@ -22,7 +22,7 @@
     $dataArr = array();
     foreach($arr as $key => $value){
         // print_r($value);
-        $id = $value['goodsid'];
+        $id = $value['goods_id'];
         $sql2 = "SELECT * FROM `goods` WHERE `goodsid` = '$id'";
         $res2 = mysqli_query($con,$sql2);
         $row2 = mysqli_fetch_assoc($res2);

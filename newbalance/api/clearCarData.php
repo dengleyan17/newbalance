@@ -4,7 +4,7 @@
 
     // $username = '婧婧';
 
-    $con = mysqli_connect('gz2005.io','root','123456','project');
+    $con = mysqli_connect('gz2005.io','root','123456','newbalance');
 
     $sql = "DELETE FROM `car` WHERE  `username` = '$username'";
 

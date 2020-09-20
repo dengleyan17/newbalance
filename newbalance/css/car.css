@@ -43,6 +43,31 @@
     top: -8px;
     vertical-align: middle;
 }
+/* .product-line .small-1 {
+    width: 8.33333333%;
+}
+.product-line .medium-2{
+    width: 16.66666667%;
+} */
+.product-line .btn-group{
+    display: flex;
+    justify-content: center;
+}
+
+.product-line .btn-group .btn{
+    /* margin: -2px; */
+    border: none;
+    width: 25px;
+    height: 25px;
+    background: snow;
+    color: #aaaaaa;
+    border: 1px solid #ebebeb;
+    text-align: center;
+    line-height: 25px;
+}
 
 
-
+ .image a>img{
+     width: 100px;
+     height: 100px;
+ }

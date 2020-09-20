@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,12 +12,14 @@
         href="https://www.newbalance.com.cn/on/demandware.static/Sites-newbalance_cn-Site/-/zh/v1598976587923/build/css/secondary.css">
     <link rel="stylesheet"
         href="https://www.newbalance.com.cn/on/demandware.static/Sites-newbalance_cn-Site/-/zh/v1600186190697/build/css/main-cn.css">
-    <link rel="stylesheet" href="https://www.newbalance.com.cn/on/demandware.static/Sites-newbalance_cn-Site/-/zh/v1600256982085/build/css/core.css">
+    <link rel="stylesheet"
+        href="https://www.newbalance.com.cn/on/demandware.static/Sites-newbalance_cn-Site/-/zh/v1600256982085/build/css/core.css">
     <link rel="stylesheet" href="../swiper-6.1.2/swiper-6.1.2/package/swiper-bundle.min.css">
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/car.css">
 </head>
+
 <body>
     <div id="headerBox"></div>
 
@@ -36,27 +39,10 @@
                 </h1>
             </div>
         </div>
-        <!-- 购物车的列表栏 -->
-        <div class="page-body content-body">
-            <div class="cart metadata">
-                <div class="row cart-login">
-                    <div class="small-12 columns">
-                        <a href="./list.html" class="button cancel compact continue-shopping">
-                            <span class="icon-outlinearrowleft"></span>
-                            <span> 来来来，咱们返回列表页继续购买~</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="small-12 columns">
-                        <div class="cart-title">
-                            您的购物车
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- 购物车的列表栏----购物车没有商品 -->
+        <!-- <div class="page-body content-body"></div> -->
+        <!-- 购物车的列表栏----购物车有商品 -->
+        <div id="itemBox"></div> 
         <!-- 联系我们 -->
         <div class="row full-width checkout-customer-service">
             <div class="small-12 columns">
@@ -98,4 +84,5 @@
     <script src="../js/ajax.js"></script>
     <script src="../js/car.js"></script>
 </body>
+
 </html>

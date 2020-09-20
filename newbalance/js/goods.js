@@ -9,7 +9,7 @@ $(() => {
     // 使用正则判断url地址是否携带id参数
     let idReg = /id=(\d+)/;
     let goods_id;
-    console.log(getCookie('username'));
+    // console.log(getCookie('username'));
 
     // console.log(idReg.test(location.search));
     if (!idReg.test(location.search)) {

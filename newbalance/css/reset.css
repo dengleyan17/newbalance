@@ -122,8 +122,11 @@
         /* 重置 hr */
 
         hr {
-            border: none;
-            height: 1px;
+            border: solid #ddd;
+            border-width: 1px 0 0;
+            clear: both;
+            margin: 1.25em 0 1.1875em;
+            height: 0;
         }
 
         /* 让非ie浏览器默认也显示垂直滚动条，防止因滚动条引起的闪烁 */

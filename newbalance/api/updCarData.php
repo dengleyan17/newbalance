@@ -6,7 +6,7 @@
     // $username = '婧婧';
     // $goods_id = 5;
     // $goods_num = 7;
-    $con = mysqli_connect('gz2005.io','root','123456','project');
+    $con = mysqli_connect('gz2005.io','root','123456','newbalance');
 
     $sql = "UPDATE `car` SET `goods_num` = ' $goods_num' WHERE `goods_id` = '$goods_id' AND `username` = '$username'";
 

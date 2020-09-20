@@ -299,13 +299,13 @@ nav .category-nav-section .category-nav-section-title {
     width: 25%;
 }
 
-.column, .columns {
+/* .column, .columns {
     padding-left: .9375em;
     padding-right: .9375em;
     width: 100%;
     float: left;
     position: relative;
-}
+} */
 
 nav .category-expand .column:last-child, nav .category-expand .columns:last-child {
     float: left;
